@@ -4,7 +4,6 @@
 1. 导包
   1. pip install re
   2. pip install requests
-  
 2. 使用步骤
   1. 更改base_url为需要的url
   2. 更改page_num为总页数
