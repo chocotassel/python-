@@ -1,11 +1,11 @@
 # python-
 利用python爬取喜马拉雅一个专辑的全部音频
 
-1. 导包
-  1. pip install re
-  2. pip install requests
-2. 使用步骤
-  1. 更改base_url为需要的url
-  2. 更改page_num为总页数
-  3. 新建audio文件夹用于存放下载的音频
-  4. 运行
+1. 导包：
+   1. pip install re
+   2. pip install requests
+2. 使用步骤：
+   1. 更改base_url为需要的url
+   2. 更改page_num为总页数
+   3. 新建audio文件夹用于存放下载的音频
+   4. 运行
