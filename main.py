@@ -1,9 +1,12 @@
+import os
 import re
 import requests
 
 
-base_url = "https://www.ximalaya.com/album/12914364"
-page_num = 13
+base_url = "https://www.ximalaya.com/album/19516564"
+page_num = 3
+folder_name = '123'
+
 
 
 album_id = base_url.split('/')[4]
@@ -20,7 +23,7 @@ def download(media_url, media_name):
     """下载"""
     res = requests.get(url=media_url, headers=headers)
 
-    with open('audio\\' + media_name + '.mp3', mode='wb') as f:
+    with open(folder_name + '\\' + media_name + '.mp3', mode='wb') as f:
         f.write(res.content)
 
 
@@ -40,6 +43,14 @@ def get_total_page(page_url):
         url = media_api(audio_id)
         download(url, title)
         print(url, title)
+
+
+
+if os.path.exists(folder_name):
+    print("文件夹存在")
+else:
+    os.mkdir(folder_name)
+    print("文件夹不存在，已创建")
 
 
 for num in range(0, page_num):
