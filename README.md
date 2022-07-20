@@ -7,5 +7,5 @@
 2. 使用步骤：
    1. 更改base_url为需要的url
    2. 更改page_num为总页数
-   3. 新建audio文件夹用于存放下载的音频
+   3. 更改folder_name为下载目标文件夹
    4. 运行
