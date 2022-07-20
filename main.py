@@ -8,7 +8,6 @@ page_num = 3
 folder_name = '123'
 
 
-
 album_id = base_url.split('/')[4]
 print(album_id)
 
